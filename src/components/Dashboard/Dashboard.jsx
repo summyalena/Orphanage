@@ -1,21 +1,39 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Header from './Header';
-import AdminTable from './AdminTable';
-import styles from '../Dashboard/dashboard.module.css';
-import Tab from './tab/Tab';
-import TabContent from './tab/TabContent';
-import TransactionTable from './TransactionTable';
-import NoTabContent from './tab/NoTabContent';
+import { useState, useEffect } from "react";
+import Header from "./Header";
+import AdminTable from "./AdminTable";
+import styles from "../Dashboard/dashboard.module.css";
+import Tab from "./tab/Tab";
+import TabContent from "./tab/TabContent";
+import TransactionTable from "./TransactionTable";
+import NoTabContent from "./tab/NoTabContent";
 
 function Admin() {
-  const [activeTab, setActiveTab] = useState('tab1');
+  const [activeTab, setActiveTab] = useState("tab1");
   const [data, setData] = useState([]);
+  const [orphans, setOrphans] = useState([]);
+
+  useEffect(() => {
+    const fetchOrphans = async () => {
+      const response = await fetch(
+        "https://orphanagehome.onrender.com/api/orphans"
+      );
+
+      const data = await response.json();
+      console.log(data);
+
+      setOrphans(data.orphans);
+    };
+
+    fetchOrphans();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://orphanagehome.onrender.com/api/donators');
+      const response = await fetch(
+        "https://orphanagehome.onrender.com/api/donators"
+      );
 
       const data = await response.json();
 
@@ -25,7 +43,7 @@ function Admin() {
     fetchData();
   }, []);
 
-  console.log(data)
+  console.log(data);
 
   return (
     <div className={styles.dashboard}>
@@ -70,7 +88,7 @@ function Admin() {
         </TabContent>
 
         <TabContent id="tab4" activeTab={activeTab}>
-          <AdminTable />
+          <AdminTable data={orphans}/>
         </TabContent>
       </div>
     </div>

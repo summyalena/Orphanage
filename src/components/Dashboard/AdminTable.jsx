@@ -2,15 +2,19 @@
 
 import { heading } from "@/utils/datas";
 import datas from "@/utils/datas";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./dashboard.module.css";
 import Container from '@/ui/Container';
 import Actions from './Actions';
+import Form from '@/ui/Form'
 
-function Table() {
+function Table({data}) {
+  const [openmodal, setopenModal] = useState(false);
+
+
   return (
     <Container className={`full-width ${styles.transactiontable}`}>
-      <Actions/>
+     <Actions openmodal={openmodal} setopenModal={setopenModal}/>
       <div>
       <p>Children</p>
       <table className="grid full-width">
@@ -22,21 +26,23 @@ function Table() {
           ))}
         </thead>
         <tbody>
-          {datas.length > 0 &&
-            datas.map((data) => (
-              <tr className={`grid ${styles.tabledata}`} key={data.id}>
+          {data.length === 0 && <p>You have no orphans yet</p>}
+          {data.length > 0 &&
+            data.map((el) => (
+              <tr className={`grid ${styles.tabledata}`} key={el.id}>
                 <td className={styles.name}>
                   <input type='checkbox'/>
-                  {data.Fullname}</td>
-                <td>{data.Sex}</td>
-                <td>{data.DOB}</td>
-                <td>{data.State}</td>
-                <td>{data.LGA}</td>
+                  {el.name}</td>
+                <td>{el.sex}</td>
+                <td>{el.dob}</td>
+                <td>{el.state}</td>
+                <td>{el.lga}</td>
               </tr>
             ))}
         </tbody>
       </table>
       </div>
+      {openmodal ? <Form setopenModal={setopenModal}/> : ''}
     </Container>
   );
 }

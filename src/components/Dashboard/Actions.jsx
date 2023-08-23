@@ -7,9 +7,13 @@ import styles from './dashboard.module.css';
 import plus from '../../../public/assests/icons/plus.svg';
 
 
-function Actions() {
+function Actions({setopenModal}) {
+
+ const handleClick =()=> {
+    setopenModal(true)
+  }
   return (
-    <button className={`${styles.actions}`}>
+    <button onClick={handleClick} className={`${styles.actions}`}>
        <Image width={20} height={20} src={plus} alt="plus"/> Add
     </button>
   )
