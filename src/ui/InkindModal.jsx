@@ -20,7 +20,7 @@ function InKindModal({ setInkindModal }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('https://orphanagehome.onrender.com', {
+    const response = await fetch('https://orphanagehome.onrender.com/api/donators', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
