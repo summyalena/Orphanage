@@ -1,7 +1,6 @@
 "use client";
 
 import { heading } from "@/utils/datas";
-import datas from "@/utils/datas";
 import React, {useState, useEffect} from "react";
 import styles from "./dashboard.module.css";
 import Container from '@/ui/Container';

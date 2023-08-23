@@ -67,7 +67,7 @@ function InKindModal({ setopenModal }) {
 
           <label>DOB</label>
           <input
-            name="DOB"
+            name="dob"
             type="text"
             onChange={(e) =>
               setValues({ ...values, phone_number: e.target.value })
