@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* color scheme */
+  --background-color: #f1f1f2;
+  --background-color-1: #ffff;
+  --primary-color: rgb(246, 139, 30);
+  --primary-color-1: rgba(189, 189, 189, 0.801);
+  --text-color: #cdcdce;
+  --footer-color-1: #313133;
+  --footer-color-2: #535357;
+
+  /* font-sizes */
+
+  /* headings */
+  --heading-1: clamp(2.9rem 4vw 4.1rem);
+  --heading-2: clamp(1.9rem 5vw 3rem);
+  --heading-3: clamp(1.1rem 5vw 1.6rem);
+  --heading-4: clamp(1rem 5vw 1.3rem);
+  --heading-5: clamp(0.9rem 5vw 1.1rem);
+  --heading-6: clamp(0.7rem 5vw 1rem);
+
+  /* text sizes */
+  --text-lg: clamp(1.3rem 5vw 1.6rem);
+  --text-md: clamp(1rem 5vw 1.2rem);
+  --text-sm: clamp(0.8rem 5vw 1rem);
+  -text-xs: clamp(0.5rem 5vw 0.9rem);
+
+  /* font weight */
+  --bold: 700;
+  --semi-bold: 600;
+  --medium: 500;
+  --thin: 400;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Bacasime Antique' sans-serif;
+  background-color: var(--background-color);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

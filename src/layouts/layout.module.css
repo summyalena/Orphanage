@@ -1,0 +1,170 @@
+.navlinks {
+  padding: 1rem;
+  position: absolute;
+  justify-content: space-around;
+}
+
+.navlist {
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: var(--background-color-1);
+}
+
+button.hamburger {
+  display: none;
+}
+
+.footer {
+  background-color: #4b514f;
+  color: white;
+}
+
+.footercontainer h5 {
+  font-size: 2.5rem;
+}
+
+.footergrid {
+  margin-top: -3.6rem;
+}
+
+.footergrid ul h6 {
+  font-size: 1.2rem;
+}
+
+.footergrid ul li {
+  font-weight: 100;
+}
+
+.formcontainer > h6 {
+  margin-top: 4.5rem;
+}
+
+.mainfootgrid {
+  margin-top: -2rem;
+}
+
+.footergrid ul h6,
+.mainfootgrid h6 {
+  font-size: 1.2rem;
+}
+
+.form {
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.form input {
+  padding: 0.1rem 0.5rem;
+  border: none;
+  border-bottom: 0.1rem solid white;
+  background-color: transparent;
+}
+
+.form textarea {
+  border: none;
+  border-bottom: 0.1rem solid white;
+  background-color: transparent;
+}
+
+.form button {
+  align-self: baseline;
+  padding: 1rem 5rem !important;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: white;
+}
+
+.navlist button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+    background-color: var(--background-color-1);
+  }
+
+  .navlinks {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .donatebtn {
+    display: none;
+  }
+
+  button.hamburger {
+    background: transparent;
+    border-radius: 50%;
+    gap: 0.25rem;
+    height: 50px;
+    width: 50px;
+    border: none;
+    z-index: 150;
+    display: flex;
+  }
+
+  .line {
+    width: 25px;
+    height: 2px;
+    background: var(--background-color-1);
+  }
+
+  .navlist {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background-color: var(--footer-color-2);
+    width: 100%;
+    padding-top: 10rem; 
+    color: var(--dark-2);
+    font-size: 1.3rem;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    z-index: 100;
+    align-items:center;
+    justify-content: unset;
+  }
+
+  .navlist button {
+    display: flex;
+ }
+
+
+  .navlist.mobile {
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+  .footercontainer h5 {
+    font-size: 1.2rem;
+  }
+
+  .footergrid {
+    margin-top: 1rem;
+  }
+
+  .footergrid > ul:last-child {
+    margin-top: 1.5rem;
+  }
+
+  .mainfootgrid > div {
+    align-items: flex-start;
+  }
+
+  .mainfootgrid {
+    margin-top: 0;
+  }
+
+  .footergrid ul h6,
+  .mainfootgrid h6 {
+    font-size: 1rem;
+  }
+}

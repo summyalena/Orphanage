@@ -1,0 +1,222 @@
+.herocontent,
+.scrollbutton {
+  color: var(--background-color-1);
+}
+
+.herocontainer {
+  background-image: url("../../../public/assests/images/HomeHeros.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.herocontent {
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 3rem;
+  position: relative;
+  top: 100px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: -395px;
+  right: 2%;
+  top: 0;
+}
+
+.herocontent > div > h1 {
+  font-size: 1.5rem;
+}
+
+.herocontent > div > p {
+  font-size: 1.6rem;
+}
+
+.herobuttons {
+  flex-direction: column;
+}
+
+.buttons button {
+  color: white;
+  padding: 0.6rem 1.5rem;
+}
+
+.buttons button:hover {
+  background-color: var(--background-color-1);
+  color: black;
+}
+
+.cardone {
+  background-color: rgb(106, 126, 216);
+  padding: 1rem;
+}
+
+.cardtwo {
+  background-color: rgb(255, 175, 119);
+  padding: 1rem;
+}
+
+.cardthree {
+  background-color: rgb(254, 206, 50);
+  padding: 1rem;
+}
+
+.cardfour {
+  background-color: rgb(186, 128, 230);
+  padding: 1rem;
+}
+
+.hopecontainer > h2 {
+  max-width: 30ch;
+  font-weight: 300;
+}
+
+.impactcontainer > h3,
+.impactcontainer > h4 {
+  font-weight: 500;
+}
+
+.helptextcard {
+  align-items: center;
+  padding-block-start: 3rem;
+}
+
+.helptextcard h5 {
+  border-top: 3px solid rgb(255, 175, 119);
+  font-weight: 100;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.helptextcard p {
+  font-size: 1rem;
+}
+
+.impactcontainer > div:first-child {
+  align-self: baseline;
+}
+
+.impactcontainer > h3 {
+  border-top: 3px solid rgb(255, 175, 119);
+  max-width: 12ch;
+  padding: 0.1rem;
+}
+
+.impactcontainer > h4{
+  font-size: 1.5rem;
+  max-width: 30ch;
+}
+
+.impactslider h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.impactslider > img,
+.hopeslider > img  {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.impactslider p {
+  max-width: 45ch;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.donatebtn {
+  background-color: rgb(146, 171, 252);
+  color: white;
+}
+
+.navigations {
+display: none;
+}
+
+.sliders {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.hopeslider img {
+  position: relative;
+  top: 0;
+  right: -20%;
+}
+
+.hopeslider h4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 10%;
+  bottom: 50%;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .helpsection {
+    grid-template-columns: 0.8fr 0.4fr;
+  }
+
+  .helptextcard p {
+    font-size: 1.5rem;
+  }
+  
+  .herocontent > div > h1 {
+    font-size: 2rem;
+  }
+
+  .herocontent {
+    top: 180px;
+  }
+
+  .herocontent > div > p {
+    font-size: 2.1rem;
+  }
+
+  .helptextcard {
+    align-items: flex-start;
+    padding-inline-start: 3rem;
+  }
+
+  .herobuttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .buttons button {
+    color: white;
+    padding: 1rem 3rem !important;
+  }
+
+  .scroll {
+    position: absolute;
+    bottom: 0;
+    top: 110px;
+    right: 5%;
+  }
+
+  .navigations {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5%;
+    top: -11%;
+    z-index: 100;
+    display: flex;
+  }
+
+  .navigations > img:last-child {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.55rem;
+    border: 0.1rem solid #FFAF77;
+  }
+  
+  .sliders {
+    margin-top: 5rem;
+  }
+}

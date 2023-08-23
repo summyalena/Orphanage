@@ -1,0 +1,170 @@
+.dashboard {
+  background-color: #F0F0F0;
+}
+
+.dashboard > div li {
+  color: #5F6D7E;
+  cursor: pointer;
+}
+
+.dashboardheader {
+  justify-content: space-between;
+  padding: 1rem;
+
+}
+
+.dashboardheader a {
+  border-radius: 1.6rem;
+  border: 0.05rem solid #5F6D7E;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  color: #5F6D7E !important;
+}
+
+.transactions {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #F0F0F0 !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.transactions h2 {
+  font-size: 0.8rem;
+}
+
+.transactions span {
+  border: 0.05rem solid rgba(128, 128, 128, 0.438);
+  padding: 1rem 0.7rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 0px 1px 0px rgba(105, 102, 102, 0.452);
+}
+
+.transactions p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.transactiontable {
+  border-radius: 0.3rem;
+}
+
+.transactiontable > div {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+.transactiontable > div > p {
+  padding-bottom: 1rem;
+}
+
+.transactiontable button {
+  background-color: #92ABFC;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 1.4rem;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.transactiontable button:hover {
+  background-color: #92abfc77;
+  color: white;
+}
+
+.transactiontable table {
+  width: 100%;
+}
+
+.transactiontable thead tr {
+  border-top: 0.05rem solid #EAEBF0;
+  border-bottom: 0.05rem solid #EAEBF0;
+}
+
+.transactiontable tbody tr {
+  padding: 0.3rem;
+  margin-bottom: -0.35rem;
+}
+
+.transactiontable {
+  font-size: 0.7rem;
+}
+
+.transactiontable thead tr th {
+  text-align: left;
+  color: #5F6D7E;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.transactiontable tbody tr:first-child{
+  background-color: #EAEBF0;
+}
+
+.transactiontable tbody tr:nth-child(3){
+  background-color: #EAEBF0;
+}
+
+.transactiontable tbody tr:nth-child(5){
+  background-color: #EAEBF0;
+}
+
+.transactiontable tbody tr:nth-child(7) {
+  background-color: #EAEBF0;
+}
+
+.transactiontable tbody tr td {
+  color: #272D37;
+  padding: 0.6rem;
+  border-top: 0.05rem solid #EAEBF0;
+  border-bottom: 0.05rem solid #EAEBF0;
+}
+
+.transactiontable thead,
+.transactiontable tbody tr {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.transactiontable tbody tr td:first-child {
+  display: flex;
+  justify-content: space-around;
+  max-width: 150px;
+}
+
+.group {
+ display: flex;
+ flex-direction: column;
+}
+
+.transactiontable tbody tr td:first-child > input {
+  padding: 0.3rem;
+  border: none;
+}
+
+.dashboardheader ul li a {
+  color: #344054 !important;
+}
+
+.notab {
+  width: 100%;
+  height: 100vh;
+}
+
+.notab p {
+  font-size: 2rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .dashboardheader {
+    padding: 1.5rem 3rem;
+  }
+}

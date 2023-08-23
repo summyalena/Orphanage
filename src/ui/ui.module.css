@@ -1,0 +1,261 @@
+.sectioncontainer {
+  padding: 1rem;
+}
+
+.button {
+  border-radius: 5rem;
+  padding: 0.9rem 3.5rem;
+  background: transparent;
+  border: 0.1rem solid var(--primary-color-1);
+}
+
+.background img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100dvh;
+  z-index: -10;
+}
+
+.hero {
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 400px;
+  left: 10%;
+  color: white;
+}
+
+.card {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  padding: 3rem 1rem;
+}
+
+.card p {
+  color: #3e030e;
+  font-size: 0.9rem;
+}
+
+.card > div {
+  text-align: center;
+  font-family: 'Inter' sans-serif;
+}
+
+.card > div > button {
+  color: #3e030e;
+  border: 1px solid #3e030e;
+  cursor: pointer;
+}
+
+.scrollbutton p {
+  font-size: 0.8rem;
+}
+
+.scrollbutton button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form label {
+  font-size: 0.8rem;
+  margin: 0 auto 0.1rem 0;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #dae0e6;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form input::placeholder {
+  font-size: 0.75rem;
+}
+
+.form input:focus {
+  outline: none;
+  border: 1px solid #92abfc;
+}
+
+.form > div:first-of-type {
+  position: relative;
+}
+
+.form > div span {
+  width: 50px;
+  height: 42px;
+  font-size: 0.9rem;
+  background-color: #92abfc;
+  border-radius: 0.2rem 0 0 0.2rem;
+  color: white;
+}
+
+.form button,
+.modalcontainer ul > button {
+  background-color: #92abfc;
+  margin: 0 auto;
+}
+
+.paid,
+.modalcontainer button {
+  margin-block: 1rem !important;
+  padding: 0.6rem 1rem;
+}
+
+.paid,
+.form button:last-of-type {
+  margin-bottom: 0 !important;
+  padding: 0.9rem 2rem !important;
+}
+
+.form button:last-of-type:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modalcontainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.185);
+  padding: 1rem;
+}
+
+.modalcontainer h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-block: 1rem;
+  color: #4b514f;
+}
+
+.modalcontainer ul {
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.modalcontainer ul li {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.modalcontainer ul li span {
+  font-weight: 600;
+}
+
+.modalcontainer > div {
+  background-color: #f0f0f0;
+  border-radius: 0.2rem;
+  width: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 100vh;
+  z-index: 100;
+}
+
+.modalcontainer > div::-webkit-scrollbar {
+  display: none;
+}
+
+.modalcard,
+.ikmodalcard {
+  background-color: #fece32;
+  padding: 1rem;
+  border-radius: 0.1rem !important;
+}
+
+.modalcard p {
+  max-width: 40ch;
+}
+
+.modalcard h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 0.5rem;
+}
+
+.heading,
+.acctheading {
+  justify-content: space-between;
+  padding: 0;
+}
+
+.heading img,
+.acctheading img {
+  display: flex;
+  align-self: flex-start;
+  width: 30%;
+  height: 30%;
+}
+
+.heading img:first-child,
+.acctheading img:first-child {
+  margin-left: -1.3rem;
+}
+
+.heading img:last-child,
+.acctheading img:last-child {
+  margin-right: -1.3rem;
+}
+
+.modalcontainer button {
+  background-color: #92abfc;
+  color: white;
+}
+
+.modalHeader {
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.modalHeader img {
+  width: 35px;
+  height: 35px;
+}
+
+.modalHeader img:last-child {
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .sectioncontainer {
+    padding: 2rem 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+
+  .scrollbutton p {
+    font-size: 1rem;
+  }
+
+  .modalcontainer {
+    padding: 0;
+  }
+
+  .modalcontainer > div {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 3rem;
+  }
+
+  .modalcontainer ul li {
+    padding: 0.5rem 1.5rem;
+  }
+}

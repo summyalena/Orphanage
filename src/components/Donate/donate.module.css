@@ -1,0 +1,118 @@
+.herocontent,
+.scrollbutton {
+  color: var(--background-color-1);
+}
+
+.herocontainer {
+  background-image: url("../../../public/assests/images/Rectangle63.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.herocontent {
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 3rem;
+  position: relative;
+  top: 100px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: -395px;
+  right: 2%;
+  top: 0;
+}
+
+.herocontent > div > h1 {
+  font-size: 2rem;
+}
+
+.herocontent > div:first-child > p {
+  font-size: 1rem;
+}
+
+.herobuttons {
+  flex-direction: column;
+}
+
+.herobuttons > p {
+  font-size: 0.9rem;
+  max-width: 44ch;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.card,
+.inkind {
+  padding: 2rem 2rem;
+  border-radius: 0.2rem !important;
+  border: 1px solid #4B514F;
+  border-radius: 0.5rem;
+  max-width: 40ch;
+  padding: 3rem 1rem;
+}
+
+.card > div {
+ text-align: center;
+ font-family: 'Inter' sans-serif;
+}
+
+.card > div > button {
+  color: #3E030E;
+  border: 1px solid #3E030E;
+  cursor: pointer;
+}
+
+.card:first-child{
+  background-color: #FECE32;
+}
+
+.card:nth-child(2){
+  background-color: #FFAF77
+
+}
+
+.card:nth-child(3){
+  background-color: #BA80E6;
+
+}
+
+.card:nth-child(4){
+  background-color: #92ABFC;
+
+}
+
+.inkind {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 768PX ){
+  .herocontent > div > h1 {
+    font-size: 3rem;
+  }
+
+  .herocontent > div:first-child > p {
+    font-size: 2.1rem;
+  }
+
+  .herobuttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .herobuttons > p {
+    font-size: 1.2rem;
+  }
+
+  .scroll {
+    position: absolute;
+    bottom: 0;
+    top: 160px;
+    right: 5%;
+  }
+  
+}
