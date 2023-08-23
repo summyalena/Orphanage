@@ -1,9 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Card from './Card';
 
-import Imageone from '../../public/assests/images/monetary.svg';
 import Button from './Button';
 import styles from './ui.module.css';
 import Image from 'next/image';
@@ -55,7 +53,7 @@ function InKindModal({ setopenModal }) {
             name="name"
             type="text"
             onChange={(e) =>
-              setValues({ ...values, full_name: e.target.value })
+              setValues({ ...values, name: e.target.value })
             }
           />
           <label>SEX</label>
@@ -70,20 +68,20 @@ function InKindModal({ setopenModal }) {
             name="dob"
             type="text"
             onChange={(e) =>
-              setValues({ ...values, phone_number: e.target.value })
+              setValues({ ...values, dob: e.target.value })
             }
           />
             <label>State</label>
           <input
             name="state"
             type="text"
-            onChange={(e) => setValues({ ...values, kind: e.target.value })}
+            onChange={(e) => setValues({ ...values, state: e.target.value })}
           />
           <label>LGA</label>
           <input
             name="lga"
             type="text"
-            onChange={(e) => setValues({ ...values, kind: e.target.value })}
+            onChange={(e) => setValues({ ...values, lga: e.target.value })}
           />
           <Button type="submit">Submit</Button>
         </form>
