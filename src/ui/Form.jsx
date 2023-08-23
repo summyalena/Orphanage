@@ -60,7 +60,7 @@ function InKindModal({ setopenModal }) {
           <input
             name="sex"
             type="text"
-            onChange={(e) => setValues({ ...values, email: e.target.value })}
+            onChange={(e) => setValues({ ...values, sex: e.target.value })}
           />
 
           <label>DOB</label>
