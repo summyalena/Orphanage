@@ -15,7 +15,7 @@ function Admin() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:4000/api/donators');
+      const response = await fetch('http://https://orphanagehome.onrender.com/api/donators');
 
       const data = await response.json();
 

@@ -21,7 +21,7 @@ function Modal({ setOpenModal }) {
   const [disabled, setDisabled] = useState(true);
 
   const handleSubmit = async () => {
-    const response = await fetch('http://localhost:4000/api/donators', {
+    const response = await fetch('http://https://orphanagehome.onrender.com/api/donators', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
